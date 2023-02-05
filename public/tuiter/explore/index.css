@@ -1,0 +1,106 @@
+.wd-bg-color-black {
+    background-color: black;
+}
+
+.wd-bg-color-darkgrey {
+    background-color: darkgrey;
+}
+
+.wd-font {
+    font-family: Arial;
+}
+
+.wd-div-height {
+    height: 130px;
+}
+
+.wd-border-color {
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-border-solid {
+    border-style: solid;
+}
+
+.wd-border-transparent {
+    border: 4px solid transparent;
+}
+
+.wd-border-thin {
+    border-width: 1px;
+}
+
+.wd-border-thick {
+    border-width: 4px;
+}
+
+.wd-border-highlight-color {
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: rgb(29,161,242);
+}
+
+.wd-text-color-white {
+    -webkit-text-fill-color: white;
+}
+
+.wd-rounded-corners-all-around {
+    border-radius: 50px;
+}
+
+.wd-pos-absolute-right-12 {
+    position: absolute;
+    right: 12px;
+}
+
+.wd-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.wd-link-text-color {
+    -webkit-text-fill-color: rgb(110, 118, 125);
+}
+
+.wd-link-highlight-color {
+    -webkit-text-fill-color: rgb(29,161,242);
+}
+
+.wd-link-text-font {
+    font-size: 15px;
+}
+
+.wd-padding-16 {
+    padding: 16px;
+}
+
+.wd-topic-text {
+    font-size: 13px;
+    -webkit-text-fill-color: rgb(110, 118, 125);
+}
+
+.wd-img-rounded-corners-all-around {
+    border-radius: 10px;
+}
+
+.wd-img-pos-absolute {
+    position: absolute;
+    right: 16px;
+
+}
+
+.wd-img-pos-up-1 {
+    top: 200px;
+}
+
+.wd-img-pos-up-2 {
+    top: 335px;
+}
+
+.wd-img-pos-up-3 {
+    top: 470px;
+}
