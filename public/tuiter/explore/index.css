@@ -1,3 +1,7 @@
+.wd-min-screen-size {
+    min-width: 650px;
+}
+
 .wd-bg-color-black {
     background-color: black;
 }
@@ -54,12 +58,18 @@
     right: 12px;
 }
 
+.wd-flex-container-search {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .wd-flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
+    justify-content: space-evenly;
 }
 
 .wd-link-text-color {
@@ -78,6 +88,18 @@
     padding: 16px;
 }
 
+.wd-padding-4 {
+    padding: 4px;
+}
+
+.wd-padding-2 {
+    padding: 2px;
+}
+
+.wd-padding-left {
+    padding-left: 50px;
+}
+
 .wd-topic-text {
     font-size: 13px;
     -webkit-text-fill-color: rgb(110, 118, 125);
@@ -94,13 +116,17 @@
 }
 
 .wd-img-pos-up-1 {
-    top: 200px;
+    top: 315px;
 }
 
 .wd-img-pos-up-2 {
-    top: 335px;
+    top: 480px;
 }
 
 .wd-img-pos-up-3 {
-    top: 470px;
+    top: 640px;
+}
+
+.wd-img-pos-up-4 {
+    top: 805px;
 }
