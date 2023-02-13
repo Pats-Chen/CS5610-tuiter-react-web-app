@@ -1,132 +1,70 @@
-.wd-min-screen-size {
-    min-width: 650px;
+.wd-hover-effect-logo:hover {
+    background-color: cornflowerblue;
 }
 
-.wd-bg-color-black {
+.wd-hover-effect:hover {
+    background-color: grey;
+}
+
+.wd-active-nav-bar {
+    color: white;
     background-color: black;
 }
 
-.wd-bg-color-darkgrey {
-    background-color: darkgrey;
-}
-
-.wd-font {
-    font-family: Arial;
-}
-
-.wd-div-height {
-    height: 130px;
-}
-
-.wd-border-color {
-    border-color: rgb(47, 51, 54);
-}
-
-.wd-border-solid {
-    border-style: solid;
-}
-
-.wd-border-transparent {
-    border: 4px solid transparent;
-}
-
-.wd-border-thin {
-    border-width: 1px;
-}
-
-.wd-border-thick {
-    border-width: 4px;
-}
-
-.wd-border-highlight-color {
-    border-top-color: transparent;
-    border-left-color: transparent;
-    border-right-color: transparent;
+.wd-active-nav-tab {
+    border-width: 10px;
     border-bottom-color: rgb(29,161,242);
 }
 
-.wd-text-color-white {
-    -webkit-text-fill-color: white;
+.wd-active-nav-tab-text {
+    color: black;
+    font-weight: bold;
 }
 
-.wd-rounded-corners-all-around {
-    border-radius: 50px;
+.wd-search-bar input{
+    padding-left: 40px;
 }
 
-.wd-pos-absolute-right-12 {
+.wd-search-bar {
+    position: relative;
+}
+
+.wd-search-bar-input-background {
+    background-color: #f8f8f8;
+}
+
+.wd-search-bar i {
     position: absolute;
-    right: 12px;
+    left: 6px;
+    top: 2px;
+    padding: 9px 8px;
 }
 
-.wd-flex-container-search {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.wd-setting {
+    position: relative;
 }
 
-.wd-flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.wd-link-text-color {
-    -webkit-text-fill-color: rgb(110, 118, 125);
-}
-
-.wd-link-highlight-color {
-    -webkit-text-fill-color: rgb(29,161,242);
-}
-
-.wd-link-text-font {
-    font-size: 15px;
-}
-
-.wd-padding-16 {
-    padding: 16px;
-}
-
-.wd-padding-4 {
+.wd-setting i {
+    position: absolute;
+    top: 4px;
     padding: 4px;
 }
 
-.wd-padding-2 {
-    padding: 2px;
+.wd-footnote-size {
+    font-size: small;
 }
 
-.wd-padding-left {
-    padding-left: 50px;
+.wd-card-image-text-anchor {
+    position: relative;
 }
 
-.wd-topic-text {
-    font-size: 13px;
-    -webkit-text-fill-color: rgb(110, 118, 125);
-}
-
-.wd-img-rounded-corners-all-around {
-    border-radius: 10px;
-}
-
-.wd-img-pos-absolute {
+.wd-card-image-text {
     position: absolute;
-    right: 16px;
-
+    top: 365px;
+    left: 10px;
+    font-size: x-large;
 }
 
-.wd-img-pos-up-1 {
-    top: 315px;
-}
-
-.wd-img-pos-up-2 {
-    top: 480px;
-}
-
-.wd-img-pos-up-3 {
-    top: 640px;
-}
-
-.wd-img-pos-up-4 {
-    top: 805px;
+.wd-side-bar-item-background {
+    background-color: #f8f8f8;
 }
