@@ -6,7 +6,7 @@ const PostSummaryItem = (post) => {
                     ${post.topic ? `<span class="text-muted wd-footnote-size">${post.topic} · Trending</span></br>` : ''}
                     <span><b>${post.userName}</b><i class="fa fa-check-circle ps-1"></i></span><span class="text-muted ps-1">- ${post.time}</span></br>
                     <span class="text-wrap">
-                        <b>${post.title}</b>
+                        ${post.title ? `<b>${post.title}</b>` : ''}
                     </span></br>
                 </span>
                 <a href=${post.href} class="stretched-link"></a>

@@ -2,11 +2,11 @@ const NavigationSidebar = () => {
     return(`
         <div class="d-none d-xl-block col-xxl-2 col-xl-2 pe-2">
             <div class="d-grid list-group">
-                <a href="../home.html" class="list-group-item list-group-item-action rounded-pill wd-hover-effect border-0 mb-3">
+                <a href="../HomeScreen/index.html" class="list-group-item list-group-item-action rounded-pill wd-hover-effect border-0 mb-3">
                     <i class="fab fa-tencent-weibo fa-2x style=" style="font-size: 1.3em; color: #0275d8"></i></a>
-                <a href="../home.html" class="list-group-item list-group-item-action rounded-pill wd-hover-effect border-0 mb-3">
+                <a href="../HomeScreen/index.html" class="list-group-item list-group-item-action rounded-pill wd-hover-effect border-0 mb-3">
                     <i class="fa fa-home fa-1x pe-1"></i><span class="text-wrap">Home</span></a>
-                <a href="#" class="list-group-item list-group-item-action active rounded-pill wd-hover-effect-active border-0 mb-3">
+                <a href="../explore/index.html" class="list-group-item list-group-item-action active rounded-pill wd-hover-effect-active border-0 mb-3">
                     <i class="fa fa-hashtag fa-1x pe-1"></i><span class="text-wrap">Explore</span></a>
                 <a href="../notifications.html" class="list-group-item list-group-item-action rounded-pill wd-hover-effect border-0 mb-3">
                     <i class="fa fa-bell fa-1x pe-1"></i><span class="text-wrap">Notifications</span></a>
@@ -23,9 +23,6 @@ const NavigationSidebar = () => {
                 <a href="../more.html" class="list-group-item list-group-item-action rounded-pill wd-hover-effect border-0 mb-3">
                     <i class="fas fa-ellipsis-h fa-1x pe-1"></i><span class="text-wrap">More</span></a>
             </div>
-<!--                <div class="list-group mt-2">-->
-<!--                    <a class="btn btn-primary rounded-pill border-0" href="../tuit.html" role="button">Tuit</a>-->
-<!--                </div>-->
             <div class="d-grid mt-2">
                 <a href="../tuit.html" class="btn btn-primary btn-block rounded-pill" role="button">Tuit</a>
             </div>
@@ -54,9 +51,9 @@ const NavigationSidebar = () => {
                 <a href="../more.html" class="list-group-item list-group-item-action rounded-pill wd-hover-effect border-0 mb-3">
                     <i class="fas fa-ellipsis-h fa-1x pe-1"></i></a>
             </div>
-            
             <div class="d-grid mt-2">
-                <a href="../tuit.html" class="btn btn-primary btn-block rounded-pill" role="button">Tuit</a>
+                <a href="../tuit.html" class="btn btn-primary btn-block rounded-pill" role="button">
+                    <i class="fa fa-feather"></i></a>
             </div>
         </div>
     `);
