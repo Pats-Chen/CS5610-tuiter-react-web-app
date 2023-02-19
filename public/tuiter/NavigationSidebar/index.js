@@ -59,6 +59,6 @@ const NavigationSidebar = () => {
                 <a href="../tuit.html" class="btn btn-primary btn-block rounded-pill" role="button">Tuit</a>
             </div>
         </div>
- `);
+    `);
 }
 export default NavigationSidebar;
