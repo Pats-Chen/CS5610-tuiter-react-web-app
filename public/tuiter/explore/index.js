@@ -1,15 +1,14 @@
 import NavigationSidebar from "../NavigationSidebar/index.js";
-import WhoToFollowList from "../WhoToFollowList";
+import WhoToFollowList from "../WhoToFollowList/index.js";
+import PostSummaryList from "../PostSummaryList/index.js";
 function exploreComponent() {
     $('#wd-explore').append(`
-        <div class="row mt-2">
-            ${NavigationSidebar()}
-            
-            <div class="col-10 col-lg-7 col-xl-6 bg-primary">
-                <h3>ExploreComponent</h3>
+        <div class="container rounded">
+            <div class="row mt-2">
+                ${NavigationSidebar()}
+                ${PostSummaryList()}
+                ${WhoToFollowList()}
             </div>
-            
-            ${WhoToFollowList()}
         </div>
     `);
 }

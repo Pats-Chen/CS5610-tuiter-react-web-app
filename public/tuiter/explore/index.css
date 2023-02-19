@@ -35,9 +35,9 @@
 
 .wd-search-bar i {
     position: absolute;
-    left: 6px;
-    top: 2px;
-    padding: 9px 8px;
+    left: 10px;
+    top: 6px;
+    padding: 4px;
 }
 
 .wd-setting {
@@ -46,8 +46,7 @@
 
 .wd-setting i {
     position: absolute;
-    top: 4px;
-    padding: 4px;
+    top: 8px;
 }
 
 .wd-footnote-size {
