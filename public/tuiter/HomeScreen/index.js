@@ -5,7 +5,7 @@ function homeComponent() {
     $('#wd-home').append(`
         <div class="container rounded">
             <div class="row mt-2">
-                ${NavigationSidebar()}
+                ${NavigationSidebar("home")}
                 
                 <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-10 col-sm-11 ps-2 pe-2">
                     <div class="list-group">
@@ -13,7 +13,7 @@ function homeComponent() {
                             <div class="row">
                                 <a href="../navigation.html">Back</a>
                                 <h3>Tuiter</h3>
-                                <textarea cols="20" rows="5" placeholder="What's happening?"></textarea><br/>
+                                <textarea cols="10" rows="5" placeholder="What's happening?"></textarea><br/>
                                 <select>
                                     <option value="EVERYONE" selected>Everyone can reply</option>
                                     <option value="FOLLOWING">People you follow</option>

@@ -5,7 +5,7 @@ function exploreComponent() {
     $('#wd-explore').append(`
         <div class="container rounded">
             <div class="row mt-2">
-                ${NavigationSidebar()}
+                ${NavigationSidebar("explore")}
                 
                 <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-10 col-sm-11 ps-2 pe-2">
                     <div class="list-group p">
