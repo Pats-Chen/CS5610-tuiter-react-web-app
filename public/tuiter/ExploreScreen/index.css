@@ -59,8 +59,8 @@
 
 .wd-card-image-text {
     position: absolute;
-    top: 365px;
-    left: 10px;
+    bottom: 435px;
+    right: 120px;
     font-size: x-large;
 }
 

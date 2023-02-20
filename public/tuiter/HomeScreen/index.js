@@ -9,18 +9,29 @@ function homeComponent() {
                 
                 <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-10 col-sm-11 ps-2 pe-2">
                     <div class="list-group">
-                        <div class="list-group-item bg-transparent rounded border-0">
+                        <div class="list-group-item bg-transparent rounded border-0 pt-1">
                             <div class="row">
-                                <a href="../navigation.html">Back</a>
-                                <h3>Tuiter</h3>
-                                <textarea cols="10" rows="5" placeholder="What's happening?"></textarea><br/>
-                                <select>
-                                    <option value="EVERYONE" selected>Everyone can reply</option>
-                                    <option value="FOLLOWING">People you follow</option>
-                                    <option value="MENTIONED">Only people you mention</option>
-                                </select><br/>
-                                <br/>
-                                <input type="file"/>
+                                <a href="../navigation.html" class="btn btn-primary btn-block rounded-pill" role="button">Back</a>
+                                <form class="mb-2">
+                                    <div class="form-group">
+                                        <label for="textinput"><b>Tuiter</b></label>
+                                        <textarea class="form-control" id="textinput" rows="5" placeholder="What's happening?"></textarea>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1"><b>Select Visibility</b></label>
+                                        <select class="form-control" id="selectinput">
+                                            <option value="EVERYONE" selected>Everyone can reply</option>
+                                            <option value="FOLLOWING">People you follow</option>
+                                            <option value="MENTIONED">Only people you mention</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="fileinput"><b>Choose Files to Upload</b></label><br/>
+                                        <input type="file" class="form-control-file" id="fileinput"><br/>
+                                    </div>
+                                </form>
                                 <a href="../tuit.html" class="btn btn-primary btn-block rounded-pill" role="button">Tuit</a>
                                 <br/>
                             </div>

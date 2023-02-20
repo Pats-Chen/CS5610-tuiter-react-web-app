@@ -45,8 +45,12 @@ function exploreComponent() {
                         
                         <div class="list-group-item border-0 rounded-bottom">
                             <div class="card">
-                                <a href="https://www.spacex.com"><img src="../img/spaceXstarship.webp" class="card-img-top img-fluid wd-card-image-text-anchor" alt="SpaceX's Starship"/></a>
-                                <span class="text-white wd-card-image-text"><b>SpaceX's Starship</b></span>
+                                <a href="https://www.spacex.com">
+                                    <img src="../img/spaceXstarship.webp" class="card-img-top img-fluid wd-card-image-text-anchor" alt="SpaceX's Starship"/>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <span class="text-white wd-card-image-text"><b>SpaceX's Starship</b></span>
+                                    </div>
+                                </a>
                                 <div class="card-body">
                                     ${PostSummaryList()}
                                 </div>
