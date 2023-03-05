@@ -1,0 +1,37 @@
+[
+  {
+    "_id": 1,
+    "userName": "Java",
+    "handler": "Java",
+    "avatarIcon": "java.png",
+    "href": "https://www.java.com"
+  },
+  {
+    "_id": 2,
+    "userName": "Python",
+    "handler": "Python",
+    "avatarIcon": "python.webp",
+    "href": "https://www.python.org"
+  },
+  {
+    "_id": 3,
+    "userName": "CPlusPlus",
+    "handler": "CPlusPlus",
+    "avatarIcon": "cplusplus.png",
+    "href": "https://cplusplus.com"
+  },
+  {
+    "_id": 4,
+    "userName": "Ruby",
+    "handler": "Ruby",
+    "avatarIcon": "ruby.webp",
+    "href": "https://www.ruby-lang.org"
+  },
+  {
+    "_id": 5,
+    "userName": "Julia",
+    "handler": "Julia",
+    "avatarIcon": "julia.png",
+    "href": "https://julialang.org"
+  }
+]

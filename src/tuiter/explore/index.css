@@ -1,0 +1,74 @@
+.wd-hover-effect-active:hover {
+    background-color: cornflowerblue;
+}
+
+.wd-hover-effect:hover {
+    background-color: grey;
+}
+
+.wd-active-nav-bar {
+    color: white;
+    background-color: black;
+}
+
+.wd-nav-tab li {
+    display: inline;
+}
+
+.wd-active-nav-tab {
+    border-width: 10px;
+    border-bottom-color: rgb(29,161,242);
+    border-bottom: 2px blue solid;
+}
+
+.wd-active-nav-tab-text {
+    color: black;
+    font-weight: bold;
+}
+
+.wd-search-bar input{
+    padding-left: 40px;
+}
+
+.wd-search-bar {
+    position: relative;
+}
+
+.wd-search-bar-input-background {
+    background-color: #f8f8f8;
+}
+
+.wd-search-bar i {
+    position: absolute;
+    left: 10px;
+    top: 6px;
+    padding: 4px;
+}
+
+.wd-setting {
+    position: relative;
+}
+
+.wd-setting i {
+    position: absolute;
+    top: 8px;
+}
+
+.wd-footnote-size {
+    font-size: small;
+}
+
+.wd-card-image-text-anchor {
+    position: relative;
+}
+
+.wd-card-image-text {
+    position: absolute;
+    bottom: 485px;
+    right: 110px;
+    font-size: x-large;
+}
+
+.wd-side-bar-item-background {
+    background-color: #f8f8f8;
+}
