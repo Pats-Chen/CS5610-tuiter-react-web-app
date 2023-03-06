@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import PostSummaryList from "../post-summary-list";
 import "./index.css";
 const ExploreComponent = () => {
@@ -29,19 +30,19 @@ const ExploreComponent = () => {
             <div className="list-group-item border-0">
                 <ul className="nav nav-pills">
                     <li className="nav-item wd-hover-effect-active">
-                        <a className="nav-link active wd-active-nav-tab rounded" href="explore-foryou.html">For you</a>
+                        <Link to="/tuiter/explore-foryou" className="nav-link active wd-active-nav-tab rounded">For you</Link>
                     </li>
                     <li className="nav-item wd-hover-effect">
-                        <a className="nav-link rounded" href="explore-trending.html">Trending</a>
+                        <Link to="/tuiter/explore-trending" className="nav-link rounded">Trending</Link>
                     </li>
                     <li className="nav-item wd-hover-effect">
-                        <a className="nav-link rounded" href="explore-news.html">News</a>
+                        <Link to="/tuiter/explore-news" className="nav-link rounded">News</Link>
                     </li>
                     <li className="nav-item wd-hover-effect">
-                        <a className="nav-link rounded" href="explore-sports.html">Sports</a>
+                        <Link to="/tuiter/explore-sports" className="nav-link rounded">Sports</Link>
                     </li>
                     <li className="nav-item wd-hover-effect d-sm-none d-md-block">
-                        <a className="nav-link rounded" href="explore-entertainment.html">Entertainment</a>
+                        <Link to="/tuiter/explore-entertainment" className="nav-link rounded">Entertainment</Link>
                     </li>
                 </ul>
             </div>
@@ -51,9 +52,11 @@ const ExploreComponent = () => {
                     <a href="https://www.spacex.com">
                         <img src={`${process.env.PUBLIC_URL}/images/spaceXstarship.webp`}
                              className="card-img-top img-fluid wd-card-image-text-anchor" alt="SpaceX's Starship"/>
-                        <div className="carousel-caption d-none d-md-block">
-                            <span className="text-white wd-card-image-text"><b>SpaceX's Starship</b></span>
+                        <div className="card-img-overlay d-flex flex-column justify-content-center" style={{padding: "0px"}}>
+                            <span className="text-white wd-card-image-text" style={{width: "50%"}}>SpaceX's Starship</span>
                         </div>
+
+
                     </a>
                     <div className="card-body">
                         <PostSummaryList/>

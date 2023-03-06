@@ -11,14 +11,9 @@
     background-color: black;
 }
 
-.wd-nav-tab li {
-    display: inline;
-}
-
 .wd-active-nav-tab {
     border-width: 10px;
     border-bottom-color: rgb(29,161,242);
-    border-bottom: 2px blue solid;
 }
 
 .wd-active-nav-tab-text {
@@ -64,8 +59,8 @@
 
 .wd-card-image-text {
     position: absolute;
-    bottom: 600px;
-    right: 110px;
+    top: 365px;
+    left: 10px;
     font-size: x-large;
 }
 

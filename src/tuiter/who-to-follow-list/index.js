@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import whoArray from './who.json';
 import WhoToFollowListItem from "./who-to-follow-list-item";
 
@@ -24,7 +25,7 @@ const WhoToFollowList = () => {
             <div className="list-group-item wd-hover-effect rounded-bottom">
                 <div className="row">
                     <div className="col-xxl-12">
-                        <a href="#"><b>Show more</b></a>
+                        <Link to="/tuiter/explore"><b>Show more</b></Link>
                     </div>
                 </div>
             </div>
