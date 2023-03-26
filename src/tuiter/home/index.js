@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import PostList from "../post-list";
+import TuitPostList from "../tuits";
 import "./index.css";
 const HomeComponent = () => {
     return(
@@ -35,7 +35,7 @@ const HomeComponent = () => {
                 </div>
             </div>
 
-            <PostList/>
+            <TuitPostList/>
         </div>
     );
 };

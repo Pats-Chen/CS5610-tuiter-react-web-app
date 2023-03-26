@@ -5,9 +5,18 @@ import ExploreComponent from "./explore";
 import HomeComponent from "./home";
 import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
+import whoReducer from "./reducers/who-reducer";
+import tuitsReducer from "./tuits/tuits-reducer";
+import tuitPostsReducer from "./tuits/tuit-posts-reducer";
+import {configureStore} from '@reduxjs/toolkit';
+import {Provider} from "react-redux";
+
+const store = configureStore(
+    {reducer: {who: whoReducer, tuits: tuitsReducer, tuitPosts: tuitPostsReducer}});
 
 function Tuiter() {
     return (
+        <Provider store={store}>
         <div className="container rounded">
             <div className="row mt-2">
                 <NavigationSidebar active="explore"/>
@@ -39,6 +48,7 @@ function Tuiter() {
                 </div>
             </div>
         </div>
+        </Provider>
     );
 }
 
