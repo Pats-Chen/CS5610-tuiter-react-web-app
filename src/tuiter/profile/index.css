@@ -1,0 +1,9 @@
+.wd-back-arrow {
+    position: relative;
+}
+
+.wd-back-arrow i {
+    position: absolute;
+    top: 12px;
+    left: 6px;
+}

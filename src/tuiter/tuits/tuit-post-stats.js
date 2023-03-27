@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
+import {useDispatch} from "react-redux";
 const TuitPostStats = (
     {
         tuitPost = {
-            "_id": 1,
+            "_id": "1",
             "userIcon": "fox.png",
             "userName": "Alice",
             "handle": "@alice",

@@ -1,9 +1,11 @@
 import React from "react";
 import TuitPostStats from "./tuit-post-stats";
+import {deleteTuitPost} from "./tuit-posts-reducer";
+import {useDispatch} from "react-redux";
 const TuitPostItem = (
     {
         tuitPost = {
-            "_id": 1,
+            "_id": "1",
             "userIcon": "fox.png",
             "userName": "Alice",
             "handle": "@alice",
@@ -21,6 +23,11 @@ const TuitPostItem = (
         }
     }
 ) => {
+    const dispatch = useDispatch();
+    const deleteTuitPostHandler = (id) => {
+        dispatch(deleteTuitPost(id));
+    }
+
     return(
         <div className="container">
             <div className="row mt-2 rounded wd-hover-effect">
@@ -32,6 +39,8 @@ const TuitPostItem = (
                 <div className="col-11 p-2">
                     <div className="list-group">
                         <div className="list-group-item bg-transparent border-0 ps-0">
+                            <i className="bi bi-x-lg float-end"
+                               onClick={() => deleteTuitPostHandler(tuitPost._id)}></i>
                             <span><b>{`${tuitPost.userName}`}</b><i className="fa fa-check-circle ps-1"></i></span>
                             <span className="text-muted ps-1">{`${tuitPost.handle}`} - {`${tuitPost.time}`}</span>
                             <div className="text-wrap">{`${tuitPost.tuit}`}</div>
