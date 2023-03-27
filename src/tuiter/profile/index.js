@@ -1,4 +1,5 @@
 import React from "react";
+import {useSelector} from "react-redux";
 import {Link} from "react-router-dom";
 import "./index.css";
 const ProfileComponent = (
@@ -20,6 +21,7 @@ const ProfileComponent = (
         }
     }
 ) => {
+    const profileArray = useSelector((state) => state.profile);
     return(
         <div className="list-group">
             <div className="list-group-item bg-transparent rounded border-0 pt-1">
