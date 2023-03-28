@@ -2,27 +2,7 @@ import React from "react";
 import TuitPostStats from "./tuit-post-stats";
 import {deleteTuitPost} from "./tuit-posts-reducer";
 import {useDispatch} from "react-redux";
-const TuitPostItem = (
-    {
-        tuitPost = {
-            "_id": "1",
-            "userIcon": "fox.png",
-            "userName": "Alice",
-            "handle": "@alice",
-            "tuit": "Amazing film by Christopher Nolan!",
-            "topic": "Movie",
-            "time": "2h",
-            "image": "inception.jpg",
-            "title": "Inception | Movies - WarnerBros.com",
-            "content": "Your mind is the scene of the crime. Box-office superstar Leonardo DiCaprio stars in this contemporary science fiction action film set \"within the architecture of the mind.\"",
-            "href": "https://www.warnerbros.com/movies/inception",
-            "replies": "4.2K",
-            "retuits": "3.5K",
-            "likes": "347",
-            "liked": true
-        }
-    }
-) => {
+const TuitPostItem = ({tuitPost}) => {
     const dispatch = useDispatch();
     const deleteTuitPostHandler = (id) => {
         dispatch(deleteTuitPost(id));

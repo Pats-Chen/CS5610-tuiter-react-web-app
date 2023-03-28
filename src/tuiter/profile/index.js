@@ -2,26 +2,8 @@ import React from "react";
 import {useSelector} from "react-redux";
 import {Link} from "react-router-dom";
 import "./index.css";
-const ProfileComponent = (
-    {
-        profile = {
-            "firstName": "Jose",
-            "lastName": "Annunziato",
-            "handle": "@jannunzi",
-            "profilePicture": "cow.webp",
-            "bannerPicture": "polyglot.jpg",
-            "bio": "Faculty, Software Engineer, AI, Space, and renewable enthusiast. Retuits and likes are not endorsements.",
-            "website": "youtube.com/webdevtv",
-            "location": "Boston, MA",
-            "dateOfBirth": "1968-07-07",
-            "dateJoined": "2009-04",
-            "numberOfTuits": "6,114",
-            "followingCount": "340",
-            "followersCount": "223"
-        }
-    }
-) => {
-    const profileArray = useSelector((state) => state.profile);
+const ProfileComponent = () => {
+    const profile = useSelector((state) => state.profile);
     return(
         <div className="list-group">
             <div className="list-group-item bg-transparent rounded border-0 pt-1">
@@ -32,8 +14,10 @@ const ProfileComponent = (
                 <div className="row">
                     <div className="col-1">
                         <span className="wd-back-arrow">
+                            <Link to="/tuiter/home" role="button">
                             <i className="fa fa-arrow-left wd-hover-effect pe-1 float-start"
                                style={{fontSize: "1.5em", color: "dimgray"}}/>
+                            </Link>
                         </span>
                     </div>
 

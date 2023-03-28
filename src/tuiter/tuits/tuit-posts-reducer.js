@@ -15,9 +15,9 @@ const templateTuitPost = {
     "title": "Google",
     "content": "Google it!",
     "href": "https://www.google.com/",
-    "replies": "0",
-    "retuits": "0",
-    "likes": "0",
+    "replies": 0,
+    "retuits": 0,
+    "likes": 0,
     "liked": false
 }
 
@@ -38,9 +38,13 @@ const tuitPostSlice = createSlice({
                 _id: (new Date()).getTime()
             })
         },
-        likeTuitPost(state, action) {
+        updateTuitPost(state, action) {
+            const index = state
+                .findIndex(tuitPost =>
+                    tuitPost._id === action.payload._id);
+            state.splice(index, 1, action.payload);
         }
     }
 });
-export const {createTuitPost, deleteTuitPost} = tuitPostSlice.actions;
+export const {createTuitPost, deleteTuitPost, updateTuitPost} = tuitPostSlice.actions;
 export default tuitPostSlice.reducer;

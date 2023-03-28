@@ -1,0 +1,9 @@
+.wd-cross-mark {
+    position: relative;
+}
+
+.wd-cross-mark i {
+    position: absolute;
+    top: 12px;
+    left: 6px;
+}

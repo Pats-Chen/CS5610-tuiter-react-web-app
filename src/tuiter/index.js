@@ -4,6 +4,7 @@ import {Routes, Route} from "react-router";
 import ExploreComponent from "./explore";
 import HomeComponent from "./home";
 import ProfileComponent from "./profile";
+import EditProfileComponent from "./profile/edit-profile";
 import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
 import whoReducer from "./reducers/who-reducer";
@@ -11,9 +12,10 @@ import tuitsReducer from "./tuits/tuits-reducer";
 import tuitPostsReducer from "./tuits/tuit-posts-reducer";
 import {configureStore} from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
+import profileReducer from "./profile/profile-reducer";
 
 const store = configureStore(
-    {reducer: {who: whoReducer, tuits: tuitsReducer, tuitPosts: tuitPostsReducer}});
+    {reducer: {who: whoReducer, tuits: tuitsReducer, tuitPosts: tuitPostsReducer, profile: profileReducer}});
 
 function Tuiter() {
     return (
@@ -27,6 +29,7 @@ function Tuiter() {
                         <Route path="home"    element={<HomeComponent/>}/>
                         <Route path="explore" element={<ExploreComponent/>}/>
                         <Route path="profile" element={<ProfileComponent/>}/>
+                        <Route path="edit-profile" element={<EditProfileComponent/>}/>
                     </Routes>
                 </div>
 
