@@ -5,8 +5,29 @@ import {useDispatch} from "react-redux";
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
+    const currentUser = {
+        "userIcon": "cow.webp",
+        "userName": "Jiazhe",
+        "handle": "@jiazhe"
+    };
+    const templateTuitPost = {
+        ...currentUser,
+        "topic": "",
+        "time": "1h",
+        "image": "google.jpg",
+        "title": "Google",
+        "content": "Google it!",
+        "href": "https://www.google.com/",
+        "replies": 0,
+        "retuits": 0,
+        "likes": 0,
+        "liked": false,
+        "dislikes": 0,
+        "disliked": false
+    }
     const tuitPostClickHandler = () => {
         const newTuitPost = {
+            ...templateTuitPost,
             tuit: whatsHappening
         }
         dispatch(createTuitPostThunk(newTuitPost));
