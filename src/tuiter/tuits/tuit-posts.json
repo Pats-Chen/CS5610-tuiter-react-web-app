@@ -13,8 +13,10 @@
     "href": "https://www.warnerbros.com/movies/inception",
     "replies": 4200,
     "retuits": 3500,
-    "likes": 347,
-    "liked": true
+    "likes": 743,
+    "liked": true,
+    "dislikes": 347,
+    "disliked": false
   },
   {
     "_id": "2",
@@ -30,7 +32,9 @@
     "href": "https://www.harukimurakami.com/",
     "replies": 965,
     "retuits": 2400,
-    "likes": 256,
-    "liked": false
+    "likes": 652,
+    "liked": false,
+    "dislikes": 256,
+    "disliked": false
   }
 ]

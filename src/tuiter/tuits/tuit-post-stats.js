@@ -1,20 +1,35 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
-import {updateTuitPost} from "./tuit-posts-reducer";
+import {updateTuitPostThunk} from "../../services/tuits-thunks";
+
 const TuitPostStats = ({tuitPost}) => {
     const dispatch = useDispatch();
     const likeTuitPostClickHandler = (tuitPost) => {
-        dispatch(updateTuitPost({
+        dispatch(updateTuitPostThunk({
             ...tuitPost,
             likes: tuitPost.likes + 1,
             liked: true
         }));
     }
-    const dislikeTuitPostClickHandler = (tuitPost) => {
-        dispatch(updateTuitPost({
+    const unlikeTuitPostClickHandler = (tuitPost) => {
+        dispatch(updateTuitPostThunk({
             ...tuitPost,
             likes: tuitPost.likes - 1,
             liked: false
+        }));
+    }
+    const dislikeTuitPostClickHandler = (tuitPost) => {
+        dispatch(updateTuitPostThunk({
+            ...tuitPost,
+            dislikes: tuitPost.dislikes + 1,
+            disliked: true
+        }));
+    }
+    const undislikeTuitPostClickHandler = (tuitPost) => {
+        dispatch(updateTuitPostThunk({
+            ...tuitPost,
+            dislikes: tuitPost.dislikes - 1,
+            disliked: false
         }));
     }
     return(
@@ -31,7 +46,7 @@ const TuitPostStats = ({tuitPost}) => {
                         { tuitPost.liked && <i className="fa fa-heart fa-1x pe-1"
                                                style={{color: "red"}}
                                                role="button"
-                                               onClick={() => dislikeTuitPostClickHandler(tuitPost)}></i>}
+                                               onClick={() => unlikeTuitPostClickHandler(tuitPost)}></i>}
                         {!tuitPost.liked && <i className="fa fa-heart fa-1x pe-1"
                                                style={{color: "dimgray"}}
                                                role="button"
@@ -39,7 +54,15 @@ const TuitPostStats = ({tuitPost}) => {
                         <span className="text-muted">{`${tuitPost.likes}`}</span>
                     </div>
                     <div className="col-3">
-                        <i className="fa fa-share fa-1x pe-1" style={{color: "dimgray"}}></i><span className="text-muted"></span>
+                        { tuitPost.disliked && <i className="fa fa-thumbs-down fa-1x pe-1"
+                                               style={{color: "blue"}}
+                                               role="button"
+                                               onClick={() => undislikeTuitPostClickHandler(tuitPost)}></i>}
+                        {!tuitPost.disliked && <i className="fa fa-thumbs-down fa-1x pe-1"
+                                               style={{color: "dimgray"}}
+                                               role="button"
+                                               onClick={() => dislikeTuitPostClickHandler(tuitPost)}></i>}
+                        <span className="text-muted">{`${tuitPost.dislikes}`}</span>
                     </div>
                 </div>
             </div>
